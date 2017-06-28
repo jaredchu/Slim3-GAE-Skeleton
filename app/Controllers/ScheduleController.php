@@ -8,13 +8,7 @@
 
 namespace App\Controllers;
 
-use App\Config;
-use App\Enums\XSType;
 use App\Schedules\ExampleSchedule;
-use App\Utils\XSParser;
-use Carbon\Carbon;
-use JC\JCRequest as Request;
-use JCFirebase\JCFirebase;
 
 class ScheduleController extends Controller
 {
