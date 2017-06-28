@@ -1,0 +1,9 @@
+runtime: php55
+api_version: 1
+
+handlers:
+- url: /task/.*
+  script: index.php
+  login: admin
+- url: /.*
+  script: index.php

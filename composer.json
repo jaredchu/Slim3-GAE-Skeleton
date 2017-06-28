@@ -1,0 +1,20 @@
+{
+  "name": "vendor/project-name",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Vendor Name",
+      "email": "vendor@gmail.com"
+    }
+  ],
+  "require": {
+    "slim/slim": "^3.0",
+    "nesbot/carbon": "^1.22",
+    "mtdowling/cron-expression": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app"
+    }
+  }
+}
