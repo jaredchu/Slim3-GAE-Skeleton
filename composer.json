@@ -1,6 +1,7 @@
 {
   "name": "jaredchu/slim3-gae-skeleton",
   "description": "Slim 3 skeleton working with Google App Engine include cron configuration.",
+  "license": "MIT",
   "type": "project",
   "authors": [
     {
