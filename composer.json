@@ -1,11 +1,20 @@
 {
-  "name": "vendor/project-name",
+  "name": "jaredchu/slim3-gae-skeleton",
+  "description": "Slim 3 skeleton working with Google App Engine include cron configuration.",
   "type": "project",
   "authors": [
     {
-      "name": "Vendor Name",
-      "email": "vendor@gmail.com"
+      "name": "Jared Chu",
+      "email": "me@jaredchu.com",
+      "homepage": "https://jaredchu.com"
     }
+  ],
+  "keywords": [
+    "slim-framework",
+    "skeleton",
+    "slim3",
+    "gae",
+    "google app engine"
   ],
   "require": {
     "slim/slim": "^3.0",
