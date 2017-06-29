@@ -2,12 +2,23 @@
 Slim 3 skeleton working with Google App Engine include cron configuration.
 
 ## Installation
+`$ composer create-project --no-interaction --stability=dev jaredchu/slim3-gae-skeleton my-app`
 
-## Configuration
+## Run
+1. `$ cd my-app`
+2. `$ php -S 0.0.0.0:8888 -t public public/index.php`
+3. Browse to http://localhost:8888
 
 ## Key directories
+- `app`: application code 
+- `app/Controllers`: contains controller classes
+- `app/Enums`: contains enum classes
+- `app/Schedules`: contains schedule classes
 
 ## Key files
+- `index.php`: Entry point to application, route configuration
+- `app.yaml`: Google App Engine main configuration
+- `cron.yaml`: Google App Engine cron configuration
 
 ## Contributing
 1. Fork it!
