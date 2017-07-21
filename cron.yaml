@@ -1,4 +1,4 @@
 cron:
-- description: an example task run every 1 min
+- description: "an example task run every 1 min"
   url: /task/test
   schedule: every 1 mins

@@ -14,7 +14,7 @@ class ExampleSchedule extends Schedule
 {
     const TIME = '* * * * *';
 
-    protected function scheduleTask()
+    protected function executeTask()
     {
         // do something
         return ScheduleResult::SUCCESS;

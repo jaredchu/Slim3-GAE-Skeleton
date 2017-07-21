@@ -32,17 +32,14 @@ class Schedule
      */
     public function run()
     {
-        if (!$this->isDue()) return Result::NOT_IN_TIME;
-        else {
-            return $this->scheduleTask();
-        }
+        return !$this->isDue() ? Result::NOT_IN_TIME : $this->executeTask();
     }
 
 
     /**
      * @return int
      */
-    protected function scheduleTask()
+    protected function executeTask()
     {
         return Result::SUCCESS;
     }
