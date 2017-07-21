@@ -1,12 +1,16 @@
 # Slim3 GAE Skeleton
 Slim 3 skeleton working with Google App Engine include cron configuration.
 
+[![Packagist](https://img.shields.io/packagist/v/jaredchu/slim3-gae-skeleton.svg)](https://packagist.org/packages/jaredchu/slim3-gae-skeleton)
+[![Packagist](https://img.shields.io/packagist/dt/jaredchu/slim3-gae-skeleton.svg)](https://packagist.org/packages/jaredchu/slim3-gae-skeleton)
+[![Packagist](https://img.shields.io/packagist/l/jaredchu/slim3-gae-skeleton.svg)](https://packagist.org/packages/jaredchu/slim3-gae-skeleton)
+
 ## Installation
 `$ composer create-project --no-interaction --stability=dev jaredchu/slim3-gae-skeleton my-app`
 
 ## Run
 1. `$ cd my-app`
-2. `$ php -S 0.0.0.0:8888 -t public public/index.php`
+2. `$ php -S 0.0.0.0:8888 -t . index.php`
 3. Browse to http://localhost:8888
 
 ## Key directories
