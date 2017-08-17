@@ -8,11 +8,23 @@ Slim 3 skeleton working with Google App Engine include cron configuration.
 ## Installation
 `$ composer create-project --no-interaction --stability=dev jaredchu/slim3-gae-skeleton my-app`
 
-Remember to run this command after update `cron.yaml`:
+## Deploy
+
+1. Install [gcloud](https://cloud.google.com/sdk/downloads) then run init command in project directory:
+
+`$ gcloud init`
+
+2. Deploy your project:
+
+`$ gcloud deploy`
+
+3. Browse to **http://[YOUR_PROJECT_ID].appspot.com**
+
+4. Remember to run this command after update `cron.yaml`:
 
 `$ gcloud app deploy cron.yaml`
 
-## Run
+## Run locally
 1. `$ cd my-app`
 2. `$ php -S 0.0.0.0:8888 -t . index.php`
 3. Browse to http://localhost:8888
