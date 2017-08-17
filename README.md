@@ -10,17 +10,17 @@ Slim 3 skeleton working with Google App Engine include cron configuration.
 
 ## Deploy
 
-1. Install [gcloud](https://cloud.google.com/sdk/downloads) then run init command in project directory:
+Install [gcloud](https://cloud.google.com/sdk/downloads) then run init command in project directory:
 
 `$ gcloud init`
 
-2. Deploy your project:
+Deploy your project:
 
-`$ gcloud deploy`
+`$ gcloud app deploy`
 
-3. Browse to **http://[YOUR_PROJECT_ID].appspot.com**
+Browse to **http://[YOUR_PROJECT_ID].appspot.com**
 
-4. Remember to run this command after update `cron.yaml`:
+Remember to run this command after update `cron.yaml`:
 
 `$ gcloud app deploy cron.yaml`
 
