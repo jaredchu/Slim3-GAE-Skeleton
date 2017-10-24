@@ -13,6 +13,6 @@ class IndexController extends Controller
 {
     public function index($rq, $rp, $args)
     {
-        $this->json($rp);
+        return $this->json($rp);
     }
 }

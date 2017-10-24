@@ -14,6 +14,6 @@ class ScheduleController extends Controller
 {
     public function test($rq, $rp, $args)
     {
-        $this->json($rp, ['scheduleResult' => (new ExampleSchedule())->run()]);
+        return $this->json($rp, ['scheduleResult' => (new ExampleSchedule())->run()]);
     }
 }
