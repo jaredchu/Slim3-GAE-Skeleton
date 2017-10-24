@@ -6,16 +6,17 @@
  * Time: 10:16
  */
 
-date_default_timezone_set('GMT+0');
-
 require 'vendor/autoload.php';
+
+date_default_timezone_set('GMT+0');
+error_reporting(\App\Config::DEBUG ? -1 : 0);
 
 use App\Controllers\IndexController;
 use App\Controllers\ScheduleController;
 
 $app = new \Slim\App([
     'settings' => [
-        'displayErrorDetails' => true
+        'displayErrorDetails' => \App\Config::DEBUG
     ]
 ]);
 
