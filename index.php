@@ -22,6 +22,7 @@ $app = new \Slim\App([
 
 //routes
 $app->get('/', [new IndexController(), 'index']);
+$app->get('/health_check', [new IndexController(), 'healthCheck']);
 $app->get('/task/test', [new ScheduleController(), 'test']);
 
 $app->run();

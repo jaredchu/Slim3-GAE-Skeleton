@@ -15,4 +15,11 @@ class IndexController extends Controller
     {
         return $this->json($rp);
     }
+
+    public function healthCheck($rq, $rp, $args)
+    {
+        return $this->json($rp, [
+            'execution_time' => microtime(true) - $_SERVER["REQUEST_TIME_FLOAT"]
+        ]);
+    }
 }
